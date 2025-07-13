@@ -1,11 +1,8 @@
 build:
   gpu: true
   python_version: "3.10"
-  python_packages:
-    - torch
-    - torchvision
-    - diffusers==0.15.0
-    - transformers
-    - accelerate
-    - safetensors
+  python_requirements: requirements.txt
+
+image: "r8.im/redbattle63/eva_face_sd"
+
 predict: "predict.py:Predictor"
